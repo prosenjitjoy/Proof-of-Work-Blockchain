@@ -1,0 +1,80 @@
+_type: export
+__export_format: 4
+__export_date: 2023-07-12T23:42:57.222Z
+__export_source: insomnia.desktop.app:v2023.4.0
+resources:
+  - _id: req_4fdd3d42abc14cbf96b992558791287c
+    parentId: wrk_6dc637ae82b14d489417ede51a01c117
+    modified: 1689204978299
+    created: 1689204963465
+    url: localhost:5000
+    name: Get Blockchain
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1689204963465
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_6dc637ae82b14d489417ede51a01c117
+    parentId: null
+    modified: 1689204908234
+    created: 1689204908234
+    name: Proof of Work Blockchain
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_65d502cc34e24446a6a2bf5a36f400e7
+    parentId: wrk_6dc637ae82b14d489417ede51a01c117
+    modified: 1689205089136
+    created: 1689204933827
+    url: localhost:5000
+    name: Write Block
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"data": 7
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1689204933827
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_1d15b0b4295efd6974516414b485af6c755607a2
+    parentId: wrk_6dc637ae82b14d489417ede51a01c117
+    modified: 1689204908236
+    created: 1689204908236
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1689204908236
+    _type: environment
+  - _id: jar_1d15b0b4295efd6974516414b485af6c755607a2
+    parentId: wrk_6dc637ae82b14d489417ede51a01c117
+    modified: 1689204908239
+    created: 1689204908239
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
